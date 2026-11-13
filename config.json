@@ -1,0 +1,24 @@
+{
+  "title": "Born Elsewhere, Living Here",
+  "version": "1.3.0",
+  "center": {"name": "Honduras", "lon": -86.6, "lat": 14.8},
+  "earth_half_circumference_km": 20015,
+  "presets": [
+    {"id": "earth", "label": "Whole Earth", "radius_km": 20015},
+    {"id": "americas", "label": "The Americas", "radius_km": 8500},
+    {"id": "neighbours", "label": "Neighbours", "radius_km": 1300},
+    {"id": "honduras", "label": "Honduras", "radius_km": 340}
+  ],
+  "groups": [
+    {"id": "ca", "label": "Central America", "codes": ["1"], "color": "#3987e5"},
+    {"id": "am", "label": "Rest of the Americas", "codes": ["2", "3", "4"], "color": "#d95926"},
+    {"id": "ocean", "label": "Across an ocean", "codes": ["5", "6", "7", "8"], "color": "#199e70"}
+  ],
+  "source": {
+    "data": "INE Honduras, Censo de Población y Vivienda 2013, País de Nacimiento by municipio (Redatam), summed to departments",
+    "data_file": "data/census2013_birth_flows.json",
+    "basemap": "Natural Earth 1:50m countries (TopoJSON)",
+    "basemap_file": "data/world_ne50m.topo.json",
+    "pipeline": "census_birth (Yanira A Rivera)"
+  }
+}

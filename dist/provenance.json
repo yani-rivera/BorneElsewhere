@@ -1,0 +1,17 @@
+{
+  "page_version": "1.3.0",
+  "build_script": "build.py 1.0.0",
+  "built_utc": "2026-11-12T23:59Z",
+  "inputs": {
+    "census2013_birth_flows.json": "75527d3753013e22",
+    "world_ne50m.topo.json": "c087b86c1b18b50c",
+    "config.json": "93ec02d7fc9764cf"
+  },
+  "source": {
+    "data": "INE Honduras, Censo de Población y Vivienda 2013, País de Nacimiento by municipio (Redatam), summed to departments",
+    "data_file": "data/census2013_birth_flows.json",
+    "basemap": "Natural Earth 1:50m countries (TopoJSON)",
+    "basemap_file": "data/world_ne50m.topo.json",
+    "pipeline": "census_birth (Yanira A Rivera)"
+  }
+}

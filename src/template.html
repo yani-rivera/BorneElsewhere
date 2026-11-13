@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/*__CSS__*/
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Born Elsewhere, Living Here</h1>
+    <p>Honduras at the centre of the world. Every line runs from a country of birth to the department where those people were living at the 2013 census.</p>
+  </div>
+  <span class="tag">Azimuthal equidistant · distances from Honduras are true</span>
+</header>
+<main>
+  <div id="mapcol">
+  <div id="deptbar" role="group" aria-label="Choose which lines to show"></div>
+  <div id="mapwrap">
+    <svg id="map" role="img" aria-label="World map centred on Honduras with a line from each country of birth to Honduras. The list beside the map holds the same numbers."></svg>
+    <div class="zoombar" id="presets" role="group" aria-label="Zoom to a distance from Honduras"></div>
+    <p class="hint">Pick a department above to see only its lines. Drag to move, scroll to zoom.</p>
+    <div id="tip" hidden></div>
+  </div>
+  </div>
+  <aside>
+    <div class="pickers">
+      <label for="pd">Living in<select id="pd"></select></label>
+      <label for="pc">Born in<select id="pc"></select></label>
+    </div>
+    <div id="panel"></div>
+    <div>
+      <div class="eyebrow">Line colour: where the birthplace is</div>
+      <div class="legend" id="legend"></div>
+      <p class="note" id="widthnote"></p>
+    </div>
+    <p class="note" id="source"></p>
+  </aside>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<script>
+const CONFIG = /*__CONFIG__*/;
+const PROVENANCE = /*__PROV__*/;
+const DATA = /*__DATA__*/;
+const WORLD = /*__WORLD__*/;
+</script>
+<script>
+/*__APP__*/
+</script>
+</body>
+</html>
